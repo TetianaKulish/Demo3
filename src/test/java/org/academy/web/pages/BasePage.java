@@ -1,6 +1,7 @@
 package org.academy.web.pages;
 
 import org.academy.TestConfigurations;
+import org.academy.utils.web.elements.elements.Button;
 import org.academy.web.AbstractPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,7 @@ public class BasePage extends AbstractPage {
     }
 
     @FindBy(xpath = "//a[contains(text(),'Issues')]")
-    private WebElement issuesLink;
+    private Button issuesLink;
 
     @FindBy(xpath = "//a[@class='js-selected-navigation-item Header-link py-lg-3 d-inline-block'][contains(text(), 'Marketplace')]")
     private WebElement marketplaceBtn;
@@ -65,7 +66,6 @@ public class BasePage extends AbstractPage {
         return new MarketplacePage(webDriver);
     }
 
-
     public CodePage clickOnRepositoryLink() {
         repositoryLink.click();
         return new CodePage(webDriver);
@@ -81,7 +81,6 @@ public class BasePage extends AbstractPage {
         exploreLink.click();
         return new ExplorePage(webDriver);
     }
-
 
 }
 

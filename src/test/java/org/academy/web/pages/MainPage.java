@@ -1,5 +1,6 @@
 package org.academy.web.pages;
 
+import org.academy.utils.web.elements.elements.Button;
 import org.academy.web.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ public class MainPage extends AbstractPage {
     }
 
     @FindBy(xpath = "//a[(contains(@class, 'HeaderMenu-link')) and (@href='/login')]")
-    private WebElement signInButton;
+    private Button signInButton;
 
 
     public LoginPage clickOnSignIn() {
