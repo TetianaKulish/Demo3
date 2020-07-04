@@ -10,11 +10,9 @@ import java.util.Properties;
 @Slf4j
 public class PropertyReader {
     {
-        copyValues(fromPath("config.properties"), true);
-        copyValues(fromPath("resources.properties"), true);
-        copyValues(fromPath("reactionOnIssue.json"), true);
+       copyValues(fromPath("C:\\Users\\Tetyana.Kulish\\Desktop\\demo\\academylessons\\src\\main\\resources\\config.properties"), true);
+       copyValues(fromPath("C:\\Users\\Tetyana.Kulish\\Desktop\\demo\\academylessons\\src\\main\\resources\\resources.properties"), true);
     }
-
     private static Properties properties = new Properties();
     private static final PropertyReader INSTANCE = new PropertyReader();
 
