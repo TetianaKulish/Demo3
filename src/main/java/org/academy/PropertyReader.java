@@ -12,6 +12,7 @@ public class PropertyReader {
     {
         copyValues(fromPath("config.properties"), true);
         copyValues(fromPath("resources.properties"), true);
+        copyValues(fromPath("reactionOnIssue.json"), true);
     }
 
     private static Properties properties = new Properties();
