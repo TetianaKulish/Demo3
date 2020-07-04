@@ -41,8 +41,6 @@
                         <configuration>
                             <files>
                                 <file>etc/config/dev.properties</file>
-                                <file>src/main/resources/config.properties</file>
-                                <file>src/main/resources/resources.properties</file>
                             </files>
                         </configuration>
                     </execution>
