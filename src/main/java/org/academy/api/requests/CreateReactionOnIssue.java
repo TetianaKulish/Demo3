@@ -10,7 +10,6 @@ import org.academy.api.Resources;
 public class CreateReactionOnIssue extends AbstractRequests {
     public void createReactionOnIssue(String token, int responseCode) {
         Response response = postIssues.withToken(token, responseCode, Resources.getCommitCommentReaction());
-        log.info(response.asString());
     }
 }
 
