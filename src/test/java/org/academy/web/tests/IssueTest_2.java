@@ -1,5 +1,6 @@
 package org.academy.web.tests;
 
+import lombok.extern.slf4j.Slf4j;
 import org.academy.TestConfigurations;
 import org.academy.utils.web.AbstractWebDriver;
 import org.academy.web.pages.BasePage;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Slf4j
 public class IssueTest_2 extends AbstractWebDriver {
     private MainPage mainPage;
     private BasePage basePage;
@@ -31,9 +33,10 @@ public class IssueTest_2 extends AbstractWebDriver {
     }
 
     @Test
-    public void checkReactionOnIssue(){
+    public void checkReactionOnIssue() {
+        log.info("check is reaction on issue correct (UI)");
         issue21420Page = issuesPagePage.clickOnIssueById();
-        String content =  issue21420Page.getReaction();
+        String content = issue21420Page.getReaction();
         assertThat(content).as("reaction on issue is correct").isEqualTo("1");
     }
 }
