@@ -20,7 +20,7 @@ public class IssuesPage extends AbstractPage {
     @FindBy(id = "issue_45_alhonchar_academylessons_link")
     private WebElement issue21420;
 
-    @FindBy(id = "issue_1_TetianaKulish_Demo3")
+    @FindBy(id = "issue_1_TetianaKulish_Demo3_link")
     private Button issueId;
 
     public Issue21420Page clickOnIssue21420() {

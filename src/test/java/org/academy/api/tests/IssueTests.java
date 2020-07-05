@@ -12,8 +12,8 @@ public class IssueTests {
 
     @Test
     public void createReactionOnIssue() {
-        //byte[] asBytes = Base64.getDecoder().decode(TestConfigurations.getApiToken());
-       // String base64Decoded = new String(asBytes, StandardCharsets.UTF_8);
-        reactionForIssue.createReactionOnIssue("ced23e54c13c27ebf2d7"+"c80bda62921652bfd6c0", 200);
+        byte[] asBytes = Base64.getDecoder().decode(TestConfigurations.getApiToken());
+        String base64Decoded = new String(asBytes, StandardCharsets.UTF_8);
+        reactionForIssue.createReactionOnIssue(base64Decoded, 200);
     }
 }

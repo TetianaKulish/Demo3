@@ -19,7 +19,7 @@ public class Issue21420Page extends AbstractPage {
     @FindBy(xpath = "//tr[contains(@class,'d-block')]//p")
     private List<WebElement> commentsList;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/button[1]/g-emoji[1]/font[1]/font[1]")
+    @FindBy(xpath ="//div[contains(@class,'comment-reactions flex-items-center border-top has-reactions js-reactions-container')]")
     private WebElement reaction;
 
     public String getLastComment() {
