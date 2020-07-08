@@ -37,6 +37,6 @@ public class IssueTest_2 extends AbstractWebDriver {
         log.info("check is reaction on issue correct (UI)");
         issue21420Page = issuesPagePage.clickOnIssueById();
         String content = issue21420Page.getReaction();
-        assertThat(content).as("reaction on issue is correct").isEqualTo("1");
+        assertThat(content).as("reaction on issue is correct").contains("1");
     }
 }
