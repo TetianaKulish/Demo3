@@ -21,6 +21,9 @@ public class LocalWebDriverManager {
     }
 
     public static WebDriver getWebDriver(String browser) {
+        if (!TestConfigurations.getBrowser().isEmpty())
+            browser = TestConfigurations.getBrowser();
+        else browser = TestConfigurations.getDefaultBrowser();
         switch (browser) {
             default:
             case "chrome":

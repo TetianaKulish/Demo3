@@ -14,6 +14,10 @@ public class TestConfigurations {
         return read("browser");
     }
 
+    public static String getDefaultBrowser() {
+        return read("default_browser");
+    }
+
     public static String getPassword() {
         return read("pass");
     }
