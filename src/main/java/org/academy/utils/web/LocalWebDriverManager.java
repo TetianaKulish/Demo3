@@ -17,13 +17,15 @@ import java.util.concurrent.TimeUnit;
 public class LocalWebDriverManager {
 
     public static synchronized WebDriver getWebDriver() {
-        return getWebDriver(TestConfigurations.getBrowser());
-    }
 
-    public static WebDriver getWebDriver(String browser) {
         if (!TestConfigurations.getBrowser().isEmpty())
-            browser = TestConfigurations.getBrowser();
-        else browser = TestConfigurations.getDefaultBrowser();
+            return getWebDriver(TestConfigurations.getBrowser());
+        else
+            return getWebDriver( TestConfigurations.getDefaultBrowser());
+
+    }
+    public static WebDriver getWebDriver(String browser) {
+
         switch (browser) {
             default:
             case "chrome":
