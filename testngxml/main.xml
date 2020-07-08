@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test suite">
-    <test name="Test1">
+<suite name="---IssueTests and IssueTest_2 run---">
+    <test name="Tests">
         <classes>
             <class name="org.academy.api.tests.IssueTests" />
             <class name="org.academy.web.tests.IssueTest_2" />
